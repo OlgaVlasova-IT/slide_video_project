@@ -35,9 +35,11 @@ function App() {
     <div className="App">
     <h3> The Best Comedies and Musicals of 2021 (by Esquire) </h3>
        <div className='movieCont'>
-           <h3>{name}</h3>
+           <h2>"{name}"</h2>
+           <div className='videoCont'>
            <ReactPlayer width="390px" height="201px" controls={true}
             url={trailer_link} />
+            </div>
            <p className="desc">{desc}</p>
            <div className="btnCont">
            <button className ="btn" onClick={prevBtn}>Prev</button>
