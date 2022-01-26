@@ -97,7 +97,7 @@ align-items: center;
  
   .desc{
     margin-top: 15px;
-    width:100%;
+    width:95%;
     text-align: left;
     font-size: 14px;
     height: 20vh;
@@ -116,7 +116,7 @@ align-items: center;
   .btnCont{
     display: flex;
     justify-content: space-between;
-    width:100%;
+    width:95%;
     height: 5vh;
   }
  
