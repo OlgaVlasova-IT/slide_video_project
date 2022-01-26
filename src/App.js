@@ -5,12 +5,12 @@ import ReactPlayer from 'react-player'
 
 function App() {
   const [ idMovie, setIdMovie] = useState(0);
-  const { id, name , desc, trailer_link, photo_landscape, source} = data[idMovie];
-  const array = [];
-  const [myWatchList, setMyWatchList] = useState(array);
+  const { id, name , desc, trailer_link} = data[idMovie];
+
+  
   
   const prevBtn = () => {
-    setMyWatchList(array)
+ 
    
     if (id <= 1) {
       setIdMovie(data.length-1)
@@ -22,7 +22,7 @@ function App() {
   }
   }
   const nextBtn = () => {
-    setMyWatchList(array)
+  
      if (id >= data.length) {
       setIdMovie(0);
     } else setIdMovie(id);
@@ -30,12 +30,7 @@ function App() {
      
   }
 
-  const addToList = () => {
-  array.push({ name: name, logo: photo_landscape});
-   setMyWatchList(array);
-    
-  }
-
+ 
   return (
     <div className="App">
     <h3> The Best Comedies and Musicals of 2021 (by Esquire) </h3>
