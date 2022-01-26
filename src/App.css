@@ -113,13 +113,9 @@ align-items: center;
   }
   .btnCont{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width:100%;
     height: 30vh;
   }
-  .myVideo{
-
-    width: 390px;
-    height: 201px;
-  }
+ 
 }
