@@ -36,7 +36,7 @@ function App() {
     <h3> The Best Comedies and Musicals of 2021 (by Esquire) </h3>
        <div className='movieCont'>
            <h3>{name}</h3>
-           <ReactPlayer width="488px" height="252px" controls={true}
+           <ReactPlayer width="390px" height="201px" controls={true}
             url={trailer_link} />
            <p className="desc">{desc}</p>
            <div className="btnCont">

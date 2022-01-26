@@ -38,7 +38,7 @@ align-items: center;
 }
 .desc{
   margin-top: 20px;
-  width:488px;
+  width:390px;
   text-align: left;
   font-size: 16px;
   height: 18vh;
@@ -108,7 +108,7 @@ align-items: center;
     margin-top: 15px;
     width:120%;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
  
   }
   .btnCont{
