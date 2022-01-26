@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+body{
+  background-color: #6E85B2;
+  font-family: 'Cormorant', serif;
+}
+
+.btn {
+
+background-color: #5C527F;
+border: none;
+width: 60px;
+height: 30px;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.movieCont{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.myVideo{
+  width: 488px;
+  height: 252px;
+}
+.desc{
+  margin-top: 20px;
+  width:488px;
+  text-align: left;
+  font-size: 16px;
+  height: 18vh;
+}
+.smallType{
+ display: flex;
+ justify-content:space-around;
+ align-items: center;
+ font-size: 10px;
+ width: 200px;
+}
+
+.btnCont{
+
+  display: flex;
+  justify-content: space-around;
+  width:100%;
+  height: 30vh;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media all and (max-width : 800px ){
+
+
+  .desc{
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width : 800px ){
+  
+ 
+  .desc{
+    margin-top: 15px;
+    width:120%;
+    text-align: left;
+    font-size: 14px;
+ 
+  }
+  .btnCont{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    height: 30vh;
+  }
+  .myVideo{
+
+    width: 390px;
+    height: 201px;
+  }
+}
