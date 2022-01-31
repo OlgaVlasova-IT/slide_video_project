@@ -68,7 +68,7 @@ import photo_landscape4 from './4/landscape.jpg'
     source: "Netflix"
   },
   { id : 8,
-    name: "Jungle Cruise",
+    name: "Luca",
     desc: "Set in a beautiful seaside town on the Italian Riviera, Disney and Pixar’s original feature film “Luca” is a coming-of-age story about one young boy experiencing an unforgettable summer filled with gelato, pasta and endless scooter rides. Luca shares these adventures with his newfound best friend, but all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water’s surface.",
     trailer_link: "https://www.youtube.com/watch?v=YdAIBlPVe9s", 
     photo_portrait: photo_portrait3,

@@ -6,7 +6,6 @@ import ReactPlayer from 'react-player'
 function App() {
   const [ idMovie, setIdMovie] = useState(0);
   const { id, name , desc, trailer_link} = data[idMovie];
-
   
   
   const prevBtn = () => {
