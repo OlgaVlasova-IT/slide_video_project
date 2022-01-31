@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 
 function App() {
   const [ idMovie, setIdMovie] = useState(0);
-  const { id, name , desc, trailer_link} = data[idMovie];
+  const { id, movieName , desc, trailer_link} = data[idMovie];
   
   
   const prevBtn = () => {
@@ -34,7 +34,7 @@ function App() {
     <div className="App">
     <h3> The Best Comedies and Musicals of 2021 (by Esquire) </h3>
        <div className='movieCont'>
-           <h2>"{name}"</h2>
+           <h2>"{movieName}"</h2>
            <div className='videoCont'>
            <ReactPlayer width="390px" height="201px" controls={true}
             url={trailer_link} />
