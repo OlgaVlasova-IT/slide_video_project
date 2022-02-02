@@ -9,14 +9,20 @@
   margin-top: 30px;
   
 }
-body{
+ body{
      background: rgb(254,185,116);
     background: radial-gradient(circle, rgba(254,185,116,1) 16%, rgba(229,103,125,0.434908997778799) 75%);
     font-family: 'Cutive Mono', monospace;}
 
+    .btnLike {
+      background-color: transparent;
+      border: none;
+      
+    }
+    
 .btn {
 
-background-color: #5C527F;
+
 border: none;
 width: 60px;
 height: 30px;
@@ -25,7 +31,15 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-family: 'Cutive Mono', monospace;
+background-color: #FC6461;
+ 
 
+}
+
+.btnShowMore {
+  background-color: transparent;
+  border: none;
+  color:#089DE3;
 }
 .movieCont{
 
@@ -36,12 +50,57 @@ font-family: 'Cutive Mono', monospace;
   width: 60%;
   height: 100vh;
 }
+ul{
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+li {
+  text-align: left;
+}
+.btnCancel{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: transparent ;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+ border:none;
+  padding: 3px 3px 3px 3px;
+
+
+}
+li{
+  margin: 3px 3px 0 3px;
+  /* btn */
+  padding: 3px;
+ width: 270px;
+ height: auto;
+   text-align: left;
+   /* background-color: rgb(173, 214, 143, 0.75); */
+   border-radius: 10px;
+   border-color: rgb(89, 124, 89);
+   font-size: 18px;
+ }
+
+.liCont {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .desc{
   margin-top: 20px;
   width:390px;
   text-align: left;
   font-size: 15px;
-  height: 25vh;
+  height: auto;
 }
 .smallType{
  display: flex;
@@ -98,7 +157,7 @@ font-family: 'Cutive Mono', monospace;
     width:95%;
     text-align: left;
     font-size: 14px;
-    height: 24vh;
+    height: auto;
  
   }
   .movieCont{
