@@ -9,7 +9,7 @@ import cancelIcon from "./cancel.png"
 
 function App() {
     const [indexMovie, setIdMovie] = useState(0);
-    const {id, movieName, desc, trailer_link, photo_landscape} = data[indexMovie];
+    const {id, movieName, desc, trailer_link} = data[indexMovie];
     const [showMore, setShowMore] = useState(false);
     const [showLike, setShowLike] = useState(new Array(data.length).fill(false));
     const [watchList, setWatchList] = useState([])
@@ -47,9 +47,9 @@ function App() {
     const addToWatchList = (id) => {
         let temp = [...showLike]
         temp[id - 1] = true;
-        console.log(temp)
+     
         setShowLike(temp)
-        console.log(id);
+        
         const movieToAdd = data.find(movie => movie.id === id);
         if (!watchList.includes(movieToAdd)) {
             const newList = [...watchList];
@@ -59,9 +59,9 @@ function App() {
     }
 
     const deleteMovie = (id) => {
-        console.log(id)
+       
         //filter temp array to delete movie
-        const temp = watchList.filter(movie => movie.id != id)
+        const temp = watchList.filter(movie => movie.id !== id)
         //update WatchList
         setWatchList(temp);
         //update like
