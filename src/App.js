@@ -45,17 +45,34 @@ function App() {
     }
 
     const addToWatchList = (id) => {
+      
+      if (!showLike[id-1]) {
         let temp = [...showLike]
         temp[id - 1] = true;
      
         setShowLike(temp)
-        
+     
         const movieToAdd = data.find(movie => movie.id === id);
         if (!watchList.includes(movieToAdd)) {
             const newList = [...watchList];
             newList.unshift(movieToAdd);
             setWatchList(newList);
         }
+      }
+      else {
+      
+          //filter temp array to delete movie
+          const temp = watchList.filter(movie => movie.id !== id)
+          //update WatchList
+          setWatchList(temp);
+          //update like
+          const tempShowLike = [...showLike];
+          //no show solid heart
+          tempShowLike[id - 1] = false;
+          //update showLike array
+          setShowLike(tempShowLike);
+
+      } 
     }
 
     const deleteMovie = (id) => {
