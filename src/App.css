@@ -177,7 +177,7 @@ li{
     height: 5vh;
   }
   .listCont{
-    width: 100%;
+    width: 95%;
   }
 
   ul {padding: 0;
@@ -190,7 +190,8 @@ li{
   }
  .movieName {
   margin: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    
 
  }
 }
