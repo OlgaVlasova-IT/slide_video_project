@@ -75,7 +75,7 @@ function App() {
     return (
         <div className="App">
             <h3 className="heading">
-                The Best Comedies and Musicals of 2021 (by Esquire)
+                The Best Comedies of 2021 (by Esquire)
             </h3>
             <div className='movieCont'>
                 <h2 className='movieName'>"{movieName}"</h2>
