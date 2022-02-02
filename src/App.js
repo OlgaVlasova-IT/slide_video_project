@@ -74,11 +74,11 @@ function App() {
 
     return (
         <div className="App">
-            <h3>
+            <h3 className="heading">
                 The Best Comedies and Musicals of 2021 (by Esquire)
             </h3>
             <div className='movieCont'>
-                <h2>"{movieName}"</h2>
+                <h2 className='movieName'>"{movieName}"</h2>
                 <div className='videoCont'>
                     <ReactPlayer width="390px" height="201px" controls={true} url={trailer_link}/>
                 </div>
